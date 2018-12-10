@@ -12,6 +12,7 @@ import dagger.Provides;
  */
 @Module
 public class UserModule {
+    @ActivityScope
     @Provides
     public User provideUser() {
         return new User();
